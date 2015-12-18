@@ -16,6 +16,7 @@ module.exports = function(grunt) {
     var options = this.options({
       template: 'template.tpl',
       indexPath: '',
+      indexFile: 'index.html',
       failuresPath: 'failures'
     });
 
@@ -66,7 +67,7 @@ module.exports = function(grunt) {
     };
 
     grunt.file.write(
-      options.indexPath + 'index.html',
+      options.indexPath + indexFile,
       grunt.template.process(
         grunt.file.read(path.dirname( __dirname ) + '/' + options.template),
         { data : {
