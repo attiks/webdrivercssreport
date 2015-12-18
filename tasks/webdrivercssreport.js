@@ -67,7 +67,7 @@ module.exports = function(grunt) {
     };
 
     grunt.file.write(
-      options.indexPath + indexFile,
+      options.indexPath + options.indexFile,
       grunt.template.process(
         grunt.file.read(path.dirname( __dirname ) + '/' + options.template),
         { data : {

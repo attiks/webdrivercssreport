@@ -1,7 +1,7 @@
 {
   "name": "grunt-webdrivercssreport",
   "description": "Generate webdrivercss report",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/attiks/webdrivercssreport",
   "author": {
     "name": "Peter Droogmans",
