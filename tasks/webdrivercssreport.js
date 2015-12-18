@@ -65,10 +65,6 @@ module.exports = function(grunt) {
       tags: allTags
     };
 
-    //console.log(JSON.stringify(baseline));
-    //console.log(JSON.stringify(unchanged));
-    console.log(JSON.stringify(failures));
-
     grunt.file.write(
       options.indexPath + 'index.html',
       grunt.template.process(
