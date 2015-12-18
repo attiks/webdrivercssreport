@@ -2,6 +2,8 @@
 
 > Generate webdrivercss report
 
+Generate an HTML file containing all failed screenshots, layout based on photobox.
+
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
 
@@ -35,55 +37,30 @@ In your project's Gruntfile, add a section named `webdrivercssreport` to the dat
         'failures': ['baseline/**/*regression*']
       }
     }
-  },
+  }
 ```
 
 ### Options
 
-#### options.separator
+#### options.template
 Type: `String`
-Default value: `',  '`
+Default value: `'template.tpl'`
 
-A string value that is used to do something with whatever.
+Template to use for the output.
 
-#### options.punctuation
+#### options.indexPath
 Type: `String`
-Default value: `'.'`
+Default value: `''`
 
-A string value that is used to do something else with whatever else.
+Location to store the generated index.html.
+
+#### options.failuresPath
+Type: `String`
+Default value: `'failures'`
+
+Location of the failure screenshots.
 
 ### Usage Examples
-
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  webdrivercssreport: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  webdrivercssreport: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
