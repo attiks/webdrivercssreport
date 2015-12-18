@@ -23,7 +23,7 @@ grunt.loadNpmTasks('grunt-webdrivercssreport');
 In your project's Gruntfile, add a section named `webdrivercssreport` to the data object passed into `grunt.initConfig()`.
 
 ```js
-  webdrivercss_report: {
+  webdrivercssreport: {
     test: {
       options: {
         template: 'template.tpl',

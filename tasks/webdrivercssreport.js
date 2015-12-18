@@ -1,6 +1,6 @@
 /*
  * grunt-webdrivercss-report
- * https://github.com/attiks/webdrivercss-report
+ * https://github.com/attiks/webdrivercssreport
  *
  * Copyright (c) 2015 Peter Droogmans
  * Licensed under the MIT license.
@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
   var path = require('path');
 
-  grunt.registerMultiTask('webdrivercss_report', 'Generate webdrivercss report', function() {
+  grunt.registerMultiTask('webdrivercssreport', 'Generate webdrivercss report', function() {
     var options = this.options({
       template: 'template.tpl',
       indexPath: '',
